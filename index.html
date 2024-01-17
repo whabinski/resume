@@ -16,30 +16,26 @@
         
         <nav>
             <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Relevant Skills</a></li>
+                <li><a class="active" href="#bio" onclick="changeTab(this)">Bio</a></li>
+                <li><a href="#experience" onclick="changeTab(this)">Experience</a></li>
+                <li><a href="#education" onclick="changeTab(this)">Education</a></li>
+                <li><a href="#skills" onclick="changeTab(this)">Relevant Skills</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="bio">
         <div class="bioContainer">
-            <img src="profilePic.jpeg" alt="Bio Picture">
+            <div class="bioBackground"></div>
+            <img src="ringo.jpg" alt="Bio Picture">
             <div>
-                <p>
-                    Third year student at McMaster University
-                </p>  
-                <p>
-                    Over 5 years of hands-on experience working with diverse programming languages, encompassing functional, logical, imperative, declarative, and object oriented paradigms.
-                </p>
-                <p>
-                    My approach to challenges is fueled by strong ambition which is a constant motivator to deliver high quality work and seek opportunities for personal and professional growth.
-                </p>
+                <p>Third year student at McMaster University</p>  
+                <p>Over 5 years of hands-on experience working with diverse programming languages, encompassing functional, logical, imperative, declarative, and object-oriented paradigms.</p>
+                <p>My approach to challenges is fueled by strong ambition, which is a constant motivator to deliver high-quality work and seek opportunities for personal and professional growth.</p>
             </div>
         </div>
     </section>
+    
 
     <section id="experience">
     </section>
@@ -51,7 +47,7 @@
     </section>
 
     <footer>
-        <p>© 2024 Wyatt Habinski. All rights reserved.</p>
+        <p>© 2024 Wyatt Habinski</p>
     </footer>
 
     <script src="script.js"></script>

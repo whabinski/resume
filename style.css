@@ -1,25 +1,43 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #333;
+    background-image: url("blurryoffice.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
 }
-
 
 header {
     background-color: #2D3250;
     color: #F6B17A;
     text-align: center;
-    padding: 20px 20em;
+    padding: 1em 20em;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    border-bottom: 2px solid #7077A1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+footer {
+    background-color: #2D3250;
+    color: #F6B17A;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #7077A1;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
 }
 
@@ -33,9 +51,14 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline; 
+a.active {
+    color: #fff;
 }
+
+a:hover {
+    color: #fff;
+}
+
 
 section {
     margin: 20px;
@@ -45,21 +68,26 @@ section {
     text-align: left;
     padding: 7em 20em;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
+
+.bioBackground {
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+    background-color: #424769;
+    z-index: -1;
+    border: 3px solid #000;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .bioContainer img {
     width: 20em;
     height: 20em;
     margin-right: 20px;
-}
-
-footer {
-    background-color: #2D3250;
-    color: #F6B17A;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = ['bio', 'experience', 'education', 'skills'];
 
     showSection('bio');
+    changeTab
 
     function showSection(sectionId) {
         sections.forEach(id => {
@@ -24,3 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function changeTab(selectedTab) {
+    var tabs = document.querySelectorAll('nav ul li a');
+    tabs.forEach(function(tab) {
+        tab.classList.remove('active');
+    });
+    selectedTab.classList.add('active');
+}
