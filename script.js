@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = ['bio', 'experience', 'education', 'skills'];
 
     showSection('bio');
-    changeTab
+    changeTab(document.querySelector('nav ul li a[href="#bio"]'));
 
     function showSection(sectionId) {
         sections.forEach(id => {
@@ -32,4 +32,12 @@ function changeTab(selectedTab) {
         tab.classList.remove('active');
     });
     selectedTab.classList.add('active');
+
+    // Get the background image from the selected section's data-bg attribute
+    var selectedSectionId = selectedTab.getAttribute('href').substring(1); // Remove the '#' from the href
+    var selectedSection = document.getElementById(selectedSectionId);
+    var backgroundImage = selectedSection.getAttribute('data-bg');
+
+    // Update the body's background image
+    document.body.style.backgroundImage = 'url("' + backgroundImage + '")';
 }

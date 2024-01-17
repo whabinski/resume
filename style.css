@@ -6,7 +6,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("blurryoffice.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,4 +89,5 @@ section {
     width: 20em;
     height: 20em;
     margin-right: 20px;
+    margin-left: 20px;
 }
