@@ -13,11 +13,11 @@ body {
 }
 
 header {
+    display: flex;
     background-color: #2D3250;
     color: #F6B17A;
     text-align: center;
-    padding: 1em 20em;
-    display: flex;
+    padding: 1em 20%;
     justify-content: space-between; 
     align-items: center; 
     border-bottom: 2px solid #7077A1;
@@ -41,7 +41,7 @@ ul {
 }
 
 ul li {
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 a {
@@ -60,34 +60,42 @@ a:hover {
 
 
 section {
-    margin: 20px;
+    margin: 5%;
 }
 
-.bioContainer {
+.infoContainer {
     text-align: left;
-    padding: 7em 20em;
+    padding: 7.5% 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    font-size: 90%;
 }
 
-.bioBackground {
+.infoBackground {
     position: absolute;
-    top: 29%;
+    top: 28%;
     left: 20%;
     width: 60%;
-    height: 40%;
+    height: 42%;
     background-color: #424769;
     z-index: -1;
     border: 3px solid #000;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.bioContainer img {
-    width: 20em;
-    height: 20em;
-    margin-right: 20px;
-    margin-left: 20px;
+.infoContainer img {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#bio .infoContainer img {
+    width: 40%;
+    height: 40%;
+}
+
+#education .infoContainer img {
+    width: 30%;
+    height: 30%;
 }
