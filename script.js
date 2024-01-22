@@ -7,11 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSection(sectionId) {
         sections.forEach(id => {
             const section = document.getElementById(id);
-            if (id === sectionId) {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
+            section.style.display = id === sectionId ? 'flex' : 'none';
+            section.classList.toggle('active', id === sectionId);
         });
     }
 
@@ -21,23 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
             tab.addEventListener('click', function (event) {
                 event.preventDefault();
                 showSection(id);
+                changeTab(this);
             });
         }
     });
 });
 
 function changeTab(selectedTab) {
-    var tabs = document.querySelectorAll('nav ul li a');
-    tabs.forEach(function(tab) {
+    const tabs = document.querySelectorAll('nav ul li a');
+    tabs.forEach(tab => {
         tab.classList.remove('active');
     });
     selectedTab.classList.add('active');
 
-    // Get the background image from the selected section's data-bg attribute
-    var selectedSectionId = selectedTab.getAttribute('href').substring(1); // Remove the '#' from the href
-    var selectedSection = document.getElementById(selectedSectionId);
-    var backgroundImage = selectedSection.getAttribute('data-bg');
-
     // Update the body's background image
-    document.body.style.backgroundImage = 'url("' + backgroundImage + '")';
+    const selectedSectionId = selectedTab.getAttribute('href').substring(1); // Remove the '#' from the href
+    const selectedSection = document.getElementById(selectedSectionId);
+    const backgroundImage = selectedSection.getAttribute('data-bg');
+    document.body.style.backgroundImage = `url("${backgroundImage}")`;
 }

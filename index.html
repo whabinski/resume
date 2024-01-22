@@ -7,7 +7,6 @@
     <title>Wyatt Habinski - Resume</title>
 </head>
 <body>
-
     <header>
         <div>
             <h1>Wyatt Habinski</h1>
@@ -16,7 +15,7 @@
         
         <nav>
             <ul>
-                <li><a class="active" href="#bio" onclick="changeTab(this)">Bio</a></li>
+                <li><a href="#bio" onclick="changeTab(this)">Bio</a></li>
                 <li><a href="#experience" onclick="changeTab(this)">Experience</a></li>
                 <li><a href="#education" onclick="changeTab(this)">Education</a></li>
                 <li><a href="#skills" onclick="changeTab(this)">Relevant Skills</a></li>
@@ -24,36 +23,46 @@
         </nav>
     </header>
 
-    <section id="bio" data-bg="assets/blurryoffice.png">
-        <div class="infoContainer">
-            <div class="infoBackground"></div>
-            <img src="assets/ringo.jpeg" alt="Bio Picture">
-            <div>
-                <p>Over 5 years of hands-on experience working with diverse programming languages, encompassing functional, logical, imperative, declarative, and object-oriented paradigms.</p>
-                <p>My approach to challenges is fueled by strong ambition, which is a constant motivator to deliver high-quality work and seek opportunities for personal and professional growth.</p>
+    <main>
+        <section id="bio" class="active" data-bg="assets/blurryoffice.png">
+            <div class="sectionContentContainer bio">
+                <img src="assets/ringo.jpeg" alt="Bio Picture">
+                <div class="text-content">
+                    <p>Over 5 years of hands-on experience working with diverse programming languages, encompassing functional, logical, imperative, declarative, and object-oriented paradigms.</p>
+                    <p>My approach to challenges is fueled by strong ambition, which is a constant motivator to deliver high-quality work, and seek opportunities for personal and professional growth.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>        
 
-    <section id="experience" data-bg="">
-    </section>
+        <section id="experience" data-bg="assets/experience_bg.png" style="display:none;">
+            <!-- Content for Experience -->
+        </section>
 
-    <section id="education" data-bg="assets/university.jpeg">
-        <div class="infoContainer">
-            <div class="infoBackground"></div>
-            <div>
-                <p>Third Year @ McMaster University</p>  
-                <p>Computer Science Co-Op Stream</p>  
-                <p>Pursuing Minor in Business</p>
-                <p>3.9 GPA</p>
+        <section id="education" data-bg="assets/university.jpeg" style="display:none;">
+            <div class="sectionContentContainer mcmaster">
+                <img src="assets/mcmaster.jpeg" alt="Bio Picture">
+                <div class="text-content">
+                    <p>Third Year @ McMaster University</p>  
+                    <p>Computer Science Co-Op Stream</p>  
+                    <p>Pursuing Minor in Business</p>
+                    <p>3.9 GPA</p>
+                </div>
             </div>
-            <img src="assets/mcmaster.jpeg" alt="Education Picture">
-        </div>
-    </section>
 
-    <section id="skills" data-bg="">
-    </section>
+            <div class="sectionContentContainer gfess">
+                <img src="assets/gfess.jpeg" alt="Bio Picture">
+                <div class="text-content">
+                    <p>Greater Fort Erie Secondary School</p>  
+                    <p>Graduating Year of 2021</p>  
+                    <p>94% Average</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" data-bg="assets/skills_bg.png" style="display:none;">
+            <!-- Content for Skills -->
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Wyatt Habinski</p>
