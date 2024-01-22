@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <title>Wyatt Habinski - Resume</title>
 </head>
 <body>
     <header>
         <div>
             <h1>Wyatt Habinski</h1>
-            <p>Computer Scientist / Software Engineer</p>    
+            <p>Computer Scientist / Software Engineer</p>
         </div>
         
         <nav>
@@ -18,13 +18,14 @@
                 <li><a href="#bio" onclick="changeTab(this)">Bio</a></li>
                 <li><a href="#experience" onclick="changeTab(this)">Experience</a></li>
                 <li><a href="#education" onclick="changeTab(this)">Education</a></li>
+                <li><a href="#courses" onclick="changeTab(this)">Key Courses</a></li>
                 <li><a href="#skills" onclick="changeTab(this)">Relevant Skills</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="bio" class="active" data-bg="assets/blurryoffice.png">
+        <section id="bio" class="active" data-bg="assets/office.jpeg">
             <div class="sectionContentContainer bio">
                 <img src="assets/ringo.jpeg" alt="Bio Picture">
                 <div class="text-content">
@@ -34,11 +35,11 @@
             </div>
         </section>        
 
-        <section id="experience" data-bg="assets/experience_bg.png" style="display:none;">
+        <section id="experience" data-bg="assets/experience.jpeg" style="display:none;">
             <!-- Content for Experience -->
         </section>
 
-        <section id="education" data-bg="assets/university.jpeg" style="display:none;">
+        <section id="education" data-bg="assets/blurryUniversity.jpeg" style="display:none;">
             <div class="sectionContentContainer mcmaster">
                 <img src="assets/mcmaster.jpeg" alt="Bio Picture">
                 <div class="text-content">
@@ -59,15 +60,121 @@
             </div>
         </section>
 
-        <section id="skills" data-bg="assets/skills_bg.png" style="display:none;">
-            <!-- Content for Skills -->
+        <section id="courses" data-bg="assets/blurryBooks.jpeg" style="display:none;">
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <div class="title">
+                    <span>Development Basics: Practice and Experience</span>
+                    <span>(Click Me)</span>
+                </div>
+                <div class="content">
+                    <p>Acquiring familiarity with professional software development settings via practical experience with interaction with UNIX-like systems, programming in C, with documentation, testing, benchmarking, profiling and debugging; shell interaction and programming, pipes and filters; revision control.</p>
+                </div>
+            </div>
+            
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Software Design and Web Programming : Practice and Experience</span>
+                <div class="content">
+                    <p>Introduction to different aspects of design: Identifying user needs, goals and desires and translating them into software, and structuring and communicating the structure of software to improve reliability, readability and adaptability. Topics include web languages and protocols, types and design patterns.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Data Structures and Algorithms</span>
+                <div class="content">
+                    <p>Basic data structures: stacks, queues, hash tables, and binary trees; searching and sorting; graph representations and algorithms, including minimum spanning trees, traversals, shortest paths; introduction to algorithmic design strategies; correctness and performance analysis.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Databases</span>
+                <div class="content">
+                    <p>Data modelling, integrity constraints, principles and design of relational databases, relational algebra, SQL, query processing, transactions, concurrency control, recovery, security and data storage.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Software Development</span>
+                <div class="content">
+                    <p>Classes and inheritance, class invariants, interface specifications; object-oriented design patterns; exception handling; tools for interface documentation, testing, program analysis; requirements documentation; quality attributes; development models.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Concurrent Systems</span>
+                <div class="content">
+                    <p>Models of concurrency: process algebras, Petri nets, temporal logics and model checking; concurrency as software structuring principle: processes, threads, synchronization mechanisms, resource management and sharing; deadlock, safety and liveness; design, verification and testing of concurrent systems.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Algorithms and Software Design : Practice and Experience</span>
+                <div class="content">
+                    <p>Implementation of computational solutions to practical problems that combine algorithmic design and analysis with software design principles, through an experiential approach in simulated workplace environments. Communication skills: Technical documentation and presentation.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Principles of Programming Languages</span>
+                <div class="content">
+                    <p>Principles of definition of and reasoning about programming languages and domain-specific languages; use of semantics for interpretation and in program analyses for correctness, security and efficiency.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Algorithms and Complexity</span>
+                <div class="content">
+                    <p>Basic computability models; the Church-Turing thesis, complexity classes; P versus NP; NP-completeness, reduction techniques; algorithmic design strategies; flows, distributed algorithms, advanced techniques such as randomization.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Computer Networks and Security</span>
+                <div class="content">
+                    <p>Physical networks, TCP/IP protocols, switching methods, network layering and components, network services. Information security, computer and network security threats, defence mechanisms, encryption.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Operating Systems</span>
+                <div class="content">
+                    <p>Processes and threads, synchronization and communication; scheduling, memory management; file systems; resource protection; structure of operating systems.</p>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Information Security</span>
+                <div class="content">
+                    <p>Basic principles of information security; threats and defences; cryptography; introduction to network security and security management.</p>
+                </div>
+            </div>
+
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <span class="title">Data Mining</span>
+                <div class="content">
+                    <p>Core techniques in big data analytics (knowledge discovery, data mining). Basic concepts of frequent patterns, algorithms for mining frequent patterns from large scale transactional databases. Clustering and classification: k-means, hierarchical k-means, DB-Scan, Gaussian mixture models, decision trees, Bayesian methods, linear classification methods, support vector machines. Practice of big data analytics in business intelligence: data warehousing, data lakes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" data-bg="assets/skillz.jpeg" style="display:none;">
+
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Wyatt Habinski</p>
+        <div>
+            <p>2024 Wyatt Habinski</p>
+        </div>
+        <div>
+            <p> whabinski@hotmail.com / 289-696-8507</p>
+        </div>
+        <a href="assets/Resume.pdf" download="Wyatt_Habinski_Resume.pdf" class="download-link">
+            Download My Resume
+        </a>
+        
     </footer>
 
-    <script src="script.js?v=1"></script>
+    <script src="script.js?v=1.1"></script>
 </body>
 </html>

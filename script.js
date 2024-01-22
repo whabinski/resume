@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = ['bio', 'experience', 'education', 'skills'];
+    const sections = ['bio', 'experience', 'education', 'courses', 'skills'];
 
     showSection('bio');
     changeTab(document.querySelector('nav ul li a[href="#bio"]'));
@@ -37,3 +37,13 @@ function changeTab(selectedTab) {
     const backgroundImage = selectedSection.getAttribute('data-bg');
     document.body.style.backgroundImage = `url("${backgroundImage}")`;
 }
+
+function toggleContent(element) {
+    var content = element.querySelector('.content');
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
+

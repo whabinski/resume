@@ -35,7 +35,12 @@ footer {
     background-color: #2D3250;
     color: #F6B17A;
     text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
     position: fixed;
+    padding-left: 25%;
+    padding-right: 25%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -45,6 +50,7 @@ footer {
     height: 6vh;
 }
 
+/* Tabs navigator stylings */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -63,6 +69,7 @@ nav ul li a:hover, nav ul li a.active {
     color: #fff;
 }
 
+/* Main styling*/
 main {
     display: flex;
     flex-direction: column;
@@ -74,6 +81,7 @@ main {
     margin-top: 11vh;
 }
 
+/* Sections styling */
 section {
     width: 80%;
     max-width: 1100px;
@@ -84,6 +92,7 @@ section {
     flex-direction: column;
 }
 
+/* Container stylings */
 .sectionContentContainer {
     position: relative;
     display: flex;
@@ -98,6 +107,7 @@ section {
     margin: 4em;
 }
 
+/* Image styling for content container*/
 .sectionContentContainer img {
     position: absolute; 
     height: auto;
@@ -119,6 +129,7 @@ section {
     left: 1vw; 
 }
 
+/* Text styling for content container */
 .sectionContentContainer .text-content {
     font-size: 0.8em;
     color: #fff;
@@ -136,6 +147,51 @@ section {
 
 .gfess .text-content {
     margin-left: 70%;
+}
+
+/* Expandable content styling */
+.expandable-container {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #424769;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-bottom: 1em;
+    width: 100%;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+
+.expandable-container .title {
+    margin: 0; 
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.expandable-container .content {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Download Resume Link */
+.download-link {
+    background-color: #2D3250; /* Or any color you want */
+    color: #F6B17A; /* Or any color you want */
+    
+    padding: 10px 20px; /* Top & Bottom, Left & Right padding */
+    text-decoration: underline; /* Removes underline from links */
+    display: inline-block; /* Allows the padding to take effect */
+
+    font-size: 1em; /* Or any size you want */
+}
+
+.download-link:hover {
+    color: #fff;
 }
 
 :root {
