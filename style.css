@@ -173,7 +173,6 @@ section {
 }
 
 .expandable-container .title {
-    margin: 0; 
     font-size: 1em;
     display: flex;
     justify-content: space-between;
@@ -187,25 +186,7 @@ section {
     max-height: 0;
 }
 
-/* Download Resume Link */
-.download-link {
-    background-color: #2D3250; 
-    color: #F6B17A;
-    padding: 10px 20px;
-    text-decoration: underline;
-    display: inline-block;
-    font-size: 1em;
-}
-
-.download-link:hover {
-    color: #fff;
-}
-
-/* Font Size Scaling */
-:root {
-    font-size: calc(0.625vw + 0.625vh); 
-}
-
+/* Skills page styling */
 .skills-container {
     max-width: 80%;
     background-color: rgb(255, 255, 255, 0.1);
@@ -229,4 +210,49 @@ section {
 
 .skill-card:hover {
     transform: translateY(-5px);
+}
+
+/* Download Resume Link */
+.download-link {
+    background-color: #2D3250; 
+    color: #F6B17A;
+    padding: 10px 20px;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.download-link:hover {
+    color: #fff;
+}
+
+/* Font Size Scaling */
+:root {
+    font-size: calc(0.625vw + 0.625vh); 
+}
+
+.expandable-container .content ul {
+    list-style-type: none; /* Removes default list bullets */
+    padding-left: 0; /* Removes default padding */
+}
+
+.expandable-container .content ul li {
+    position: relative; /* For custom bullet positioning */
+    padding-left: 1em; /* Space for the custom bullet */
+    margin-bottom: 0.65em; /* Space between list items */
+}
+
+.expandable-container .content ul li:before {
+    content: '•'; /* Custom bullet */
+    position: absolute; /* Absolute positioning relative to the li */
+    left: 0; /* Position at the start of the li */
+    color: #F6B17A; /* Bullet color */
+}
+
+.expandable-container .content ul li ul {
+    padding-left: 2em; /* Indent nested lists */
+}
+
+.expandable-container .content ul li ul li:before {
+    content: '◦'; /* Different bullet style for nested items */
 }

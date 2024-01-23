@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=2">
     <title>Wyatt Habinski - Resume</title>
 </head>
 <body>
@@ -27,14 +27,14 @@
     <main>
         <section id="bio" class="active" data-bg="assets/office.jpeg">
             <div class="sectionContentContainer bio">
-                <img src="assets/ringo.jpeg" alt="Bio Picture">
+                <img src="assets/ringo.jpeg" alt="personal photo">
                 <div class="text-content">
                     <p>Over 5 years of hands-on experience working with diverse programming languages, encompassing functional, logical, imperative, declarative, and object-oriented paradigms.</p>
                     <p>My approach to challenges is fueled by strong ambition, which is a constant motivator to deliver high-quality work, and seek opportunities for personal and professional growth.</p>
                 </div>
             </div>
             <div class="sectionContentContainer contact">
-                <img src="assets/ringo.jpeg" alt="Contact Picture">
+                <img src="assets/ringo.jpeg" alt="dog photo">
                 <div class="text-content">
                     <h2> Contact Me!</h2>
                     <p>Email: whabinski@hotmail.com</p>
@@ -43,13 +43,80 @@
             </div>
         </section>        
 
-        <section id="experience" data-bg="assets/experience.jpeg" style="display:none;">
-            <!-- Content for Experience -->
+        <section id="experience" data-bg="assets/desk.jpeg" style="display:none;">
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <div class="title">
+                    <div style="display: flex;">
+                        <h2 style="padding-right: 0.5em;">Home Equity Bank:</h2>
+                        <h2 style="color: #F6B17A">Programming Analyst (Summer Internships)</h2>
+                    </div>
+                    <span>(Click Me)</span>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Collaborated within an agile sprint development environment ensuring efficient and seamless integration of new features.</li>
+                        <li style="padding-bottom: 2em;">Worked in a versatile team-oriented atmosphere which engaged in various sub teams within the development department and other cross functional teams throughout the business.</li>
+                        <li style="padding-bottom: 2em;"><strong>May 2022 - Sep 2022 Projects</strong>
+                            <ul>
+                                <li>Developed an algorithm enabling the efficient redaction of personal information for inactive clients which took the form of an interactive button in Salesforce. Additionally designed and implemented a batch program to systematically identify and redact all accounts that meet the criteria.
+                                </li>
+                                <li>Participated in sprint delivery by completing tasks such as code debugging, fixing, and refactoring.</li>
+                            </ul>
+                        </li>
+                        <li><strong>May 2021 - Sep 2021 Project</strong>
+                            <ul>
+                                <li>Tasked with a 4 month long project aimed to optimize the teams’ time tracking by creating a web app designed for user friendly interface.</li>
+                                <li>Utilized Visual Studio 2022, Microsoft SQL Server Management Studio, Swagger, and Entity Frameworks to transform an existing database into a web app by also integrating Vue.js and TelerikUI controls to enhance the front end development.</li>
+                                <li>Ensured the project's reliability by overseeing testing in various environments and guiding it through to production via Azure Dev-Ops.</li>
+                                <li>Successfully managed and improved upon change requests.</li>
+                                <img src="assets/timetracking.jpeg" alt="timetracking" style="width: 50%">
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <div class="title">
+                    <div style="display: flex;">
+                        <h2 style="padding-right: 0.5em;">Sherkston Shores:</h2>
+                        <h2 style="color: #F6B17A">Security Guard</h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><strong>May 2020 - Sept 2020 & May 2021 - Sept 2021 (Summer Seasonal)</strong>
+                            <ul>
+                                <li>Applied conflict resolution techniques in various high pressure situations, sharpening problem solving abilities crucial for dynamic environments.</li>
+                                <li>Collaborated with different park teams to ensure a safe and secure environment showcasing strong teamwork and communication skills.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expandable-container" onclick="toggleContent(this)">
+                <div class="title">
+                    <div style="display: flex;">
+                        <h2 style="padding-right: 0.5em;">Logixx Security:</h2>
+                        <h2 style="color: #F6B17A">Security Guard</h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><strong>Nov 2020 - May 2021</strong>
+                            <ul>
+                                <li>Operated in an independant role, taking responsibility for daily tasks without constant supervision.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="education" data-bg="assets/blurryUniversity.jpeg" style="display:none;">
+        <section id="education" data-bg="assets/university.jpeg" style="display:none;">
             <div class="sectionContentContainer mcmaster">
-                <img src="assets/mcmaster.jpeg" alt="Bio Picture">
+                <img src="assets/mcmaster.jpeg" alt="mcmaster">
                 <div class="text-content">
                     <p>Third Year @ McMaster University</p>  
                     <p>Computer Science Co-Op Stream</p>  
@@ -59,7 +126,7 @@
             </div>
 
             <div class="sectionContentContainer gfess">
-                <img src="assets/gfess.jpeg" alt="Bio Picture">
+                <img src="assets/gfess.jpeg" alt="gfess">
                 <div class="text-content">
                     <p>Greater Fort Erie Secondary School</p>  
                     <p>Graduating Year of 2021</p>  
@@ -68,7 +135,7 @@
             </div>
         </section>
 
-        <section id="courses" data-bg="assets/blurryBooks.jpeg" style="display:none;">
+        <section id="courses" data-bg="assets/books.jpeg" style="display:none;">
             <div class="expandable-container" onclick="toggleContent(this)">
                 <div class="title">
                     <span>Development Basics: Practice and Experience</span>
@@ -165,7 +232,7 @@
             </div>
         </section>
 
-        <section id="skills" data-bg="assets/blurrySkills.jpeg" style="display:none;">
+        <section id="skills" data-bg="assets/puzzle.jpeg" style="display:none;">
             <div class="skills-container">
                 <div class="skill-card">Front end development</div>
                 <div class="skill-card">Back end development</div>
@@ -194,6 +261,6 @@
         
     </footer>
 
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=2"></script>
 </body>
 </html>
