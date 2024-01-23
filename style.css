@@ -39,8 +39,8 @@ footer {
     align-items: center;
     display: flex;
     position: fixed;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 30%;
+    padding-right: 30%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -189,7 +189,6 @@ section {
 /* Skills page styling */
 .skills-container {
     max-width: 80%;
-    background-color: rgb(255, 255, 255, 0.1);
     border-radius: 5px;
     padding: 5%;
     margin: 0 auto;
@@ -212,18 +211,48 @@ section {
     transform: translateY(-5px);
 }
 
-/* Download Resume Link */
-.download-link {
-    background-color: #2D3250; 
-    color: #F6B17A;
-    padding: 10px 20px;
-    text-decoration: underline;
-    display: inline-block;
-    font-size: 1em;
+.expandable-container .content ul {
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
-.download-link:hover {
-    color: #fff;
+.expandable-container .content ul li {
+    position: relative;
+    padding-left: 1em; 
+    margin-bottom: 0.65em; 
+}
+
+.expandable-container .content ul li:before {
+    content: '•'; 
+    position: absolute; 
+    left: 0; 
+    color: #F6B17A; 
+}
+
+.expandable-container .content ul li ul {
+    padding-left: 2em; 
+}
+
+.expandable-container .content ul li ul li:before {
+    content: '◦';
+}
+
+/* Download Reesume Button */
+.download-resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2D3250; /* This is the button's background color */
+    color: #F6B17A; /* This is the text color */
+    text-decoration: none; /* Removes underline from text */
+    border-radius: 5px; /* Gives the button rounded corners */
+    border: 2px solid #F6B17A; /* Adds a border to the button */
+    font-weight: bold; /* Makes the font bold */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.download-resume-button:hover {
+    background-color: #F6B17A; /* Background color on hover */
+    color: #2D3250; /* Text color on hover */
 }
 
 /* Font Size Scaling */
@@ -231,28 +260,3 @@ section {
     font-size: calc(0.625vw + 0.625vh); 
 }
 
-.expandable-container .content ul {
-    list-style-type: none; /* Removes default list bullets */
-    padding-left: 0; /* Removes default padding */
-}
-
-.expandable-container .content ul li {
-    position: relative; /* For custom bullet positioning */
-    padding-left: 1em; /* Space for the custom bullet */
-    margin-bottom: 0.65em; /* Space between list items */
-}
-
-.expandable-container .content ul li:before {
-    content: '•'; /* Custom bullet */
-    position: absolute; /* Absolute positioning relative to the li */
-    left: 0; /* Position at the start of the li */
-    color: #F6B17A; /* Bullet color */
-}
-
-.expandable-container .content ul li ul {
-    padding-left: 2em; /* Indent nested lists */
-}
-
-.expandable-container .content ul li ul li:before {
-    content: '◦'; /* Different bullet style for nested items */
-}
