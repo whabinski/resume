@@ -16,7 +16,7 @@ header {
     background-color: #2D3250;
     color: #F6B17A;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 1.5vh 20%;
     display: flex;
     justify-content: space-between;
@@ -119,6 +119,11 @@ section {
     left: 1vw; 
 }
 
+.contact img {
+    width: 35%;
+    right: 1vw;
+}
+
 .mcmaster img {
     width: 25%;
     right: 1vw; 
@@ -139,6 +144,10 @@ section {
 
 .bio .text-content {
     margin-left: 40%;
+}
+
+.contact .text-content {
+    margin-right: 40%;
 }
 
 .mcmaster .text-content {
@@ -180,21 +189,44 @@ section {
 
 /* Download Resume Link */
 .download-link {
-    background-color: #2D3250; /* Or any color you want */
-    color: #F6B17A; /* Or any color you want */
-    
-    padding: 10px 20px; /* Top & Bottom, Left & Right padding */
-    text-decoration: underline; /* Removes underline from links */
-    display: inline-block; /* Allows the padding to take effect */
-
-    font-size: 1em; /* Or any size you want */
+    background-color: #2D3250; 
+    color: #F6B17A;
+    padding: 10px 20px;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 1em;
 }
 
 .download-link:hover {
     color: #fff;
 }
 
+/* Font Size Scaling */
 :root {
     font-size: calc(0.625vw + 0.625vh); 
 }
 
+.skills-container {
+    max-width: 80%;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background-color: #424769;
+    color: #ffffff;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
