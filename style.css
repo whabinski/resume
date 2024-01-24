@@ -240,19 +240,19 @@ section {
 /* Download Reesume Button */
 .download-resume-button {
     display: inline-block;
-    padding: 1em 2em;
-    background-color: #2D3250; /* This is the button's background color */
-    color: #F6B17A; /* This is the text color */
-    text-decoration: none; /* Removes underline from text */
-    border-radius: 5px; /* Gives the button rounded corners */
-    border: 2px solid #F6B17A; /* Adds a border to the button */
-    font-weight: bold; /* Makes the font bold */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    padding: 0.5em 1.5em;
+    background-color: #2D3250; 
+    color: #F6B17A; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 2px solid #F6B17A;
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .download-resume-button:hover {
-    background-color: #F6B17A; /* Background color on hover */
-    color: #2D3250; /* Text color on hover */
+    background-color: #F6B17A; 
+    color: #2D3250; 
 }
 
 /* Font Size Scaling */
