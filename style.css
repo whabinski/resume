@@ -136,7 +136,7 @@ section {
 
 /* Text styling for content container */
 .sectionContentContainer .text-content {
-    font-size: 0.8em;
+    font-size: 1em;
     color: #fff;
     flex: 1;
     padding: 1vw;
@@ -257,6 +257,6 @@ section {
 
 /* Font Size Scaling */
 :root {
-    font-size: calc(0.625vw + 0.625vh); 
+    font-size: calc(0.65vw + 0.65vh); 
 }
 
