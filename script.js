@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = ['bio', 'experience', 'education', 'courses', 'skills'];
+    const sections = ['profile', 'experience', 'education', 'courses', 'skills'];
 
-    showSection('bio');
-    changeTab(document.querySelector('nav ul li a[href="#bio"]'));
+    showSection('profile');
+    changeTab(document.querySelector('nav ul li a[href="#profile"]'));
 
     function showSection(sectionId) {
         sections.forEach(id => {
