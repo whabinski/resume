@@ -39,11 +39,16 @@ function changeTab(selectedTab) {
 }
 
 function toggleContent(element) {
-    var content = element.querySelector('.content');
+    const content = element.querySelector('.content');
+    const toggleText = element.querySelector('.title span:last-child'); // Target the text span
+
     if (content.style.maxHeight) {
-        content.style.maxHeight = null;
+        content.style.maxHeight = null; // Collapse content
+        toggleText.textContent = "(Click to Expand)"; // Update text
     } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.scrollHeight + "px"; // Expand content
+        toggleText.textContent = "(Click to Minimize)"; // Update text
     }
 }
+
 
