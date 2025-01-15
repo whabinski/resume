@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css?v=10">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>Wyatt Habinski - Resume</title>
 </head>
 <body>
+
+<!------------------------ Header  ---------------------------------------------------------------------------------------------------------------------------------->
+
     <header>
         <div>
             <h1>Wyatt Habinski</h1>
@@ -25,6 +29,9 @@
     </header>
 
     <main>
+
+<!------------------------ Profile  ---------------------------------------------------------------------------------------------------------------------------------->
+
         <section id="profile" class="active" data-bg="assets/city.jpeg">
             <div class="sectionContentContainer profile">
                 <img src="assets/profilePicOrigional.jpeg" alt="personal photo">
@@ -42,6 +49,8 @@
                 </div>
             </div>
         </section>        
+
+<!------------------------ Experience  ---------------------------------------------------------------------------------------------------------------------------------->
 
         <section id="experience" data-bg="assets/desk.jpeg" style="display:none;">
             <div class="expandable-container blue-color" onclick="toggleContent(this)">
@@ -78,6 +87,34 @@
                                 <li>Utilized Azure DevOps for task management, code deployment, and CI/CD processes, playing an integral role in project delivery.</li>
                                 <li>Collaborated with cross-functional teams to design, implement, and test software features</li>
                                 <li>Demonstrated strong problem-solving skills by independently debugging and optimizing code, adhering to best practices in software development and version control.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expandable-container blue-color" onclick="toggleContent(this)">
+                <div class="title">
+                    <div style="display: flex;">
+                        <h2 style="padding-right: 0.5em;">Building Science Investigations:</h2>
+                        <h2 style="color: #F6B17A">Automation Developer (Contract) </h2>
+                    </div>
+                    <span>(Click To Expand)</span>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><strong>August 2024 - September 2024</strong>
+                            <ul>
+                                <li>Designed and implemented an automated tool to process input data from Excel and generate professional documents, including:
+                                    <ul>
+                                        <li>1 Excel summary report</li>
+                                        <li>2 Word documents with customized layouts and branding</li>
+                                    </ul>        
+                                with customized layouts, formulas, and branding</li>
+                                <li>Utilized Python with libraries like pandas, openpyxl, and python-docx to streamline data extraction, transformation, and formatting.</li>
+                                <li>Developed a user friendly GUI using PyQt5, enabling file uploads and report customization.</li>
+                                <li>Automated repetitive tasks, reducing manual reporting time, while ensuring accuracy and consistency.</li>
+                                <li>Enhanced maintainability by modularizing the project into distinct components for UI, data processing, and document generation.</li>
                             </ul>
                         </li>
                     </ul>
@@ -126,6 +163,8 @@
             </div>
         </section>
 
+<!------------------------ Education  ---------------------------------------------------------------------------------------------------------------------------------->
+
         <section id="education" data-bg="assets/university.jpeg" style="display:none;">
             <div class="sectionContentContainer mcmaster">
                 <img src="assets/mcmaster.jpeg" alt="mcmaster">
@@ -146,6 +185,8 @@
                 </div>
             </div>
         </section>
+
+<!------------------------ Key Courses  ---------------------------------------------------------------------------------------------------------------------------------->
 
         <section id="courses" data-bg="assets/books.jpeg" style="display:none;">
             <div class="expandable-container blue-color" onclick="toggleContent(this)">
@@ -510,6 +551,8 @@
 
         </section>
 
+<!------------------------ Skills  ---------------------------------------------------------------------------------------------------------------------------------->
+
         <section id="skills" data-bg="assets/puzzle.jpeg" style="display:none;">
             <div class="skills-container">
                 <div class="skill-card">Front end development (Web App development)</div>
@@ -529,15 +572,24 @@
         
     </main>
 
-    <footer>
-        <div>
-            <p>2025 Wyatt Habinski</p>
-        </div>
-        <a href="assets/Resume.pdf" download="Wyatt_Habinski_Resume.pdf" class="download-resume-button">
-            Download My Resume
-        </a>
+<!------------------------ Footer  ---------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+    <div>
+        <p>2025 Wyatt Habinski</p>
+    </div>
+    <a href="https://www.linkedin.com/in/wyatt-habinski/" target="_blank">
+        <i class="fab fa-linkedin" style="font-size: 2.5em; margin-left: 1em; margin-right: 1em; color: #F6B17A"></i>
+    </a>
         
-    </footer>
+    <a href="https://github.com/whabinski" target="_blank">
+        <i class="fab fa-github" style="font-size: 2.5em; margin-right: 1em; color: #F6B17A"></i>
+    </a>
+
+    <a href="assets/Resume.pdf" download="Wyatt_Habinski_Resume.pdf" target="_blank" rel="noopener noreferrer" class="download-resume-button">
+        Download My Resume
+    </a>
+</footer>
 
     <script src="script.js?v=10"></script>
 </body>
