@@ -198,6 +198,46 @@ section {
     max-height: 0;
 }
 
+/* Legend  */
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 1em; 
+    font-size: 0.9em;
+}
+
+.legend-color {
+    width: 1.4em;
+    height: 1.4em;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 0.25em;
+}
+
+.computer-science {
+    background-color: #7077A1;
+}
+
+.math {
+    background-color: #75b365;
+}
+
+.business {
+    background-color: #F6B17A;
+}
+
+
 /* Skills page styling */
 .skills-container {
     max-width: 80%;
